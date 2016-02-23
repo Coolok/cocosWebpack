@@ -1,0 +1,16 @@
+.idea/
+*.py[cod]
+*.so
+*.db
+*.sqlite
+*.mo
+.*.swp
+.idea/
+*.*~
+cocos2d-js-es6/frameworks/*
+cocos2d-js-es6/node_modules/*
+cocos2d-js-es6/src/*
+
+
+
+
