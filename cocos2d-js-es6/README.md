@@ -1,3 +1,5 @@
+![alt tag](https://github.com/Coolok/cocosWebpack/blob/master/cocos2d-js-es6/HelloWorld.png)
+
 # cocos2d-js es6
  [Visual Studio Code](https://code.visualstudio.com/)
 
