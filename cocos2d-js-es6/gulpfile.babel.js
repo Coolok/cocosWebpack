@@ -25,6 +25,6 @@ gulp.task('webpack', async () => {
   await innerSpawn(cmd, ['-p']);
 });
 
-gulp.task('build:web', ['webpack'], async() => {
+gulp.task('build web', ['webpack'], async() => {
   await compile();
 });

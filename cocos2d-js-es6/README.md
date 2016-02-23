@@ -132,6 +132,3 @@ http://localhost:8080/webpack-dev-server/
 npm i -g gulp
 npm i -D gulp
 ```
-```bash
-npm build:web
-```
