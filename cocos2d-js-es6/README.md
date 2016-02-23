@@ -1,8 +1,8 @@
-# cocos2d-js es6环境搭建模板
-推荐代码编辑器 [Visual Studio Code](https://code.visualstudio.com/)
+# cocos2d-js es6
+ [Visual Studio Code](https://code.visualstudio.com/)
 
 
-## Visual Studio Code配置
+## Visual Studio Code
 ```js
 // File => Perferences => Workspace Settings
 {
@@ -35,19 +35,19 @@
 }
 ```
 
-## 配置静态检测模块 [Eslint](http://eslint.org/)
+##  [Eslint](http://eslint.org/)
 ```bash
 npm i -D eslint
 npm i -D eslint-config-airbnb
 npm i -D babel-eslint
 npm i -D eslint-plugin-react
 ```
-创建'.eslintrc'
+'.eslintrc'
 ```json
-// id-length: 默认变量命名不能小于一个字符
-// no-console: 默认不能使用console方法
+// id-length: 
+// no-console:console
 
-// "globals" 指定全局对象
+// "globals" 
 {
   "extends": "eslint-config-airbnb",
 
@@ -66,14 +66,14 @@ npm i -D eslint-plugin-react
 }
 ```
 
-## 安装依赖模块 [Babel](http://babeljs.io)
+##  [Babel](http://babeljs.io)
 ```bash
 npm i -D babel babel-loader babel-runtime webpack
 npm i -g webpack
 npm i -g webpack-dev-server
 ```
 
-## 配置 [Webpack](https://webpack.github.io/)
+##  [Webpack](https://webpack.github.io/)
 ```js
 // webpack.config.babel.js
 import webpack from 'webpack';
@@ -112,21 +112,20 @@ const config = {
 export default config;
 ```
 
-## 编译
-手动编译
+## 
 ```bash
 webpack --progress --colors --watch
-webpack -p // 发布
-webpack -w // 监控
+webpack -p //
+webpack -w //
 webpack -d // sourcemap
 ```
-开发阶段自动编译
+
 ```bash
 webpack-dev-server --progress --colors
 ```
 http://localhost:8080/webpack-dev-server/
 
-## 自动化脚本
+## 
 ```bash
 npm i -g gulp
 npm i -D gulp
