@@ -37,6 +37,12 @@
 }
 ```
 
+## 
+```bash
+npm i -g gulp
+npm i -D gulp
+```
+
 ##  [Eslint](http://eslint.org/)
 ```bash
 npm i -D eslint
@@ -127,8 +133,3 @@ webpack-dev-server --progress --colors
 ```
 http://localhost:8080/webpack-dev-server/
 
-## 
-```bash
-npm i -g gulp
-npm i -D gulp
-```
