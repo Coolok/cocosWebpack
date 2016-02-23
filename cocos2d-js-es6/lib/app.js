@@ -7,6 +7,8 @@ cc.game.es6Start = function gameStart() {
     document.body.removeChild(document.getElementById('cocosLoading'));
   }
 
+  
+  
   // Pass true to enable retina display, disabled by default to improve performance
   cc.view.enableRetina(false);
   // Adjust viewport meta

@@ -1,7 +1,6 @@
 import {res} from '../resource.js';
 import _ from 'lodash';
 import console from '../utils/cocos-ex/cocos-console.js';
-
 import { createStore } from 'redux';
 import todoApp from '../store/reducers';
 import { addTodo, completeTodo, setVisibilityFilter, VisibilityFilters } from '../store/actions';
@@ -52,7 +51,7 @@ const HelloWorldLayer = cc.Layer.extend({
     // 3. add your codes below...
     // add a label shows "Hello World"
     // create and initialize a label
-    var helloLabel = new cc.LabelTTF("Hello World", "Arial", 38);
+    var helloLabel = new cc.LabelTTF("XIM Wireless", "Arial", 38);
     // position the label on the center of the screen
     helloLabel.x = size.width / 2;
     helloLabel.y = 0;

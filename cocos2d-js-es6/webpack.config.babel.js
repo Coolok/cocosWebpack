@@ -1,7 +1,10 @@
 import webpack from 'webpack';
 
 const config = {
-  entry: __dirname + '/lib/app.js',
+  entry: {
+	app:__dirname + '/lib/app.js',
+	// vendor:  __dirname +'/frameworks/cocos2d-html5/cocos2d/actions/CCAction.js' ,
+	},
 
   output: {
     path: __dirname + '/src',
@@ -13,11 +16,12 @@ const config = {
   module: {
     loaders: [
       { test: /\.js$/, exclude: /node_modules/, loader: 'babel?stage=1&optional=runtime' },
-    ],
+    ]
   },
 
   plugins: [
     new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
+	// new webpack.optimize.CommonsChunkPlugin(/* chunkName= */"cocos", /* filename= */"cocos.bundle.js"),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
         warnings: false,

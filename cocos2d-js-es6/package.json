@@ -1,7 +1,7 @@
 {
   "name": "cocos2d-js-es6",
   "version": "1.0.0",
-  "description": "cocos2d-js es6环境搭建模板",
+  "description": "cocos2d-js es6",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "event-stream": "^3.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.3",
     "lodash": "^3.10.1",
     "moment": "^2.11.2",
     "redux": "^3.0.4"
