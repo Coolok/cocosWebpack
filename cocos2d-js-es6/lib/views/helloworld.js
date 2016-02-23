@@ -88,15 +88,15 @@ const HelloWorldLayer = cc.Layer.extend({
   },
 
   reduxText: function () {
-    // 打印初始状态
+
     console.log('init', store.getState());
 
-    // 监听 state 更新时，打印日志
+
     const unsubscribe = store.subscribe(() =>
       console.log(store.getState())
       );
 
-    // 发起一系列 action
+
     store.dispatch(addTodo('Learn about actions'));
     store.dispatch(addTodo('Learn about reducers'));
     store.dispatch(addTodo('Learn about store'));
@@ -104,7 +104,6 @@ const HelloWorldLayer = cc.Layer.extend({
     store.dispatch(completeTodo(1));
     store.dispatch(setVisibilityFilter(VisibilityFilters.SHOW_COMPLETED));
 
-    // 停止监听 state 更新
     unsubscribe();
   },
 
